@@ -22,6 +22,18 @@ const servicos = [
         nome: "Vacina Antirrábica",
         preco: 99.9,
         descricao: "O seu Gato precisa de uma dose da Vacina Antirrábica, por Ano!"
+    },
+    {
+        id: 4,
+        nome: 'Tosa',
+        preco: 59.9,
+        descricao: "Venha Tosar seu Gatinho"
+    },
+    {
+        id: 4,
+        nome: 'Vacina contra Herpes Felina',
+        preco: 109.9,
+        descricao: "O se Gatinho Precisa está sempre e dia com a vacina de Herpes Felina!"
     }
 ];
 
