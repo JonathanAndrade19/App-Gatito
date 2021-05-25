@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { SafeAreaView, StatusBar, Text } from 'react-native';
+import { SafeAreaView, StatusBar, Text, FlatList } from 'react-native';
+
+import Item from './Item';
 
 const servicos = [
     {
@@ -13,13 +15,13 @@ const servicos = [
         id: 2,
         nome: "Vacina V4",
         preco: 89.9,
-        descricao: "Seu Gato precisa de duas dose!"
+        descricao: "O seu Gato precisa de duas dose da Vacina V4, por Ano!"
     },
     {
         id: 3,
         nome: "Vacina Antirrábica",
         preco: 99.9,
-        descricao: "Uma dose por ano!"
+        descricao: "O seu Gato precisa de uma dose da Vacina Antirrábica, por Ano!"
     }
 ];
 
@@ -27,5 +29,11 @@ export default function Servicos() {
     return <SafeAreaView>
         <StatusBar/>
         <Text>Serviços!</Text>
+
+        <FlatList
+            data={servicos}
+            renderItem={({item}) => <Item {...item} />}
+            keyExtractor={(id) => String(id)}
+        />
     </SafeAreaView>
 }
