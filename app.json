@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "gatito",
+    "name": "Gatito",
     "slug": "gatito",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,12 +21,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#A050BE"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.png"
     }
   }
 }
